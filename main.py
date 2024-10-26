@@ -42,6 +42,9 @@ if __name__ == '__main__':
     for config_source in config_source_list:
         try:
             logger.info(f'AUGENSBVFD config_source={config_source}')
+            if not config_source.get('enabled', True):
+                logger.info(f'SWFDFBGNOK disabled')
+                continue
             url = 'https://share.dmhy.org/topics/rss/rss.xml?' + urllib.parse.urlencode(config_source['query'])
             logger.info(f'JYYIMCDVGJ url={url}')
             rss = requests.get(url).text
