@@ -1,0 +1,9 @@
+# Powershell, get python path
+Get-Command python | Select-Object -ExpandProperty Path
+Get-Command pip | Select-Object -ExpandProperty Path
+
+# install requirements
+pip install -r requirements.txt -U
+
+# run
+python main.py
