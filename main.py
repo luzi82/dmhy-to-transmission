@@ -92,4 +92,4 @@ if __name__ == '__main__':
     #     print(added_torrent_data['client_id'])
     #     print(added_torrent_data['torrent_data']['title'])
 
-    print('HGAPHXGKSJ DONE')
+    logger.info('HGAPHXGKSJ DONE')
